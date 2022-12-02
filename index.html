@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Facebook clone</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navleft">
+        <img src="./images/PngItem_4750896.png" class="logo" />
+        <ul>
+          <li>
+            <img src="/images/notification.png" />
+          </li>
+          <li>
+            <img src="./images/inbox.png" />
+          </li>
+          <li>
+            <img src="./images/video.png" />
+          </li>
+        </ul>
+      </div>
+      <div class="navright">
+        <form class="form-inline my-2 my-lg-0 pr-4">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="./images/profile-pic.png" />
+        </div>
+      </div>
+
+      <!-- settings menu------ -->
+
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span> </span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="./images/profile-pic.png" />
+            <div>
+              <p>John Nichols</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="./images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-link">
+            <img src="./images/setting.png" class="settings-icon" />
+            <a href="#"
+              >Settings and Privacy <img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-link">
+            <img src="./images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help and Support<img src="./images/arrow.png" width="10px"
+            /></a>
+          </div>
+          <div class="settings-link">
+            <img src="./images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display and Accesibility<img
+                src="./images/arrow.png"
+                width="10px"
+            /></a>
+          </div>
+          <div class="settings-link">
+            <img src="./images/logout.png" class="settings-icon" />
+            <a href="#">Logout<img src="./images/arrow.png" width="10px" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- left sidebar-------------- -->
+
+    <div class="containerr">
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><img src="./images/news.png" />Latest News</a>
+          <a href="#"><img src="./images/friends.png" />Friends</a>
+          <a href="#"><img src="./images/group.png" />Group</a>
+          <a href="#"><img src="./images/marketplace.png" />Marketplace</a>
+          <a href="#"><img src="./images/watch.png" />Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"><img src="./images/shortcut-1.png" />Web Developers</a>
+          <a href="#"><img src="./images/shortcut-2.png" />Web Design course</a>
+          <a href="#"
+            ><img src="./images/shortcut-3.png" />Full Stack Developent</a
+          >
+          <a href="#"><img src="./images/shortcut-4.png" />Website Experts</a>
+        </div>
+      </div>
+
+      <!-- main content---------- -->
+
+      <div class="main-content">
+        <div class="story-galary">
+          <div class="story story-1">
+            <img src="./images/upload.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story-2">
+            <img src="./images/member-1.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story-3">
+            <img src="./images/member-2.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story-4">
+            <img src="./images/member-3.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story-5">
+            <img src="./images/member-4.png" />
+            <p>Post Story</p>
+          </div>
+        </div>
+        <div class="writepost-container">
+          <div class="user-profile">
+            <img src="./images/profile-pic.png" />
+            <div>
+              <p>John Nichols</p>
+              <small>public<i class="fa-solid fa-caret-down pl-1"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind John"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#"><img src="./images/live-video.png" />Live Video</a>
+              <a href="#"><img src="./images/photo.png" />Photo/video</a>
+              <a href="#"><img src="./images/feeling.png" />Feeling/Activity</a>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" />
+              <div>
+                <p>John Nichols</p>
+                <span>November 15 2022, 4:10pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <p class="post-text">
+            Trying to make a clone of Facebook App
+            <a href="#">#Facebook clone on the making</a>
+            <a href="#">#HTML/CSS/BOOTSTRAP</a>
+          </p>
+          <img src="./images/feed-image-1.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="./images/like-blue.png" />120</div>
+              <div><img src="./images/comments.png" />48</div>
+              <div><img src="./images/share.png" />36</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" />
+              <div>
+                <p>John Nichols</p>
+                <span>November 15 2022, 4:10pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <p class="post-text">
+            Reach out to me for any suggestions
+            <a href="#">#Facebook clone on the making</a>
+            <a href="#">#HTML/CSS/BOOTSTRAP</a>
+          </p>
+          <img src="./images/feed-image-2.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="./images/like-blue.png" />220</div>
+              <div><img src="./images/comments.png" />118</div>
+              <div><img src="./images/share.png" />26</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" />
+              <div>
+                <p>John Nichols</p>
+                <span>November 15 2022, 4:10pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <p class="post-text">
+            Follow me for more!
+            <a href="#">#Follow</a>
+            <a href="#">#Facebook #instagram</a>
+          </p>
+          <img src="./images/feed-image-3.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="./images/like-blue.png" />220</div>
+              <div><img src="./images/comments.png" />118</div>
+              <div><img src="./images/share.png" />26</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" />
+              <div>
+                <p>John Nichols</p>
+                <span>November 15 2022, 4:10pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <p class="post-text">
+            Comment down below for the source code
+            <a href="#">#Comment</a>
+            <a href="#">#Facebook clone</a>
+          </p>
+          <img src="./images/feed-image-4.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="./images/like-blue.png" />220</div>
+              <div><img src="./images/comments.png" />118</div>
+              <div><img src="./images/share.png" />26</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png" />
+              <div>
+                <p>John Nichols</p>
+                <span>November 15 2022, 4:10pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+          <p class="post-text">
+            Suggest me what should i work on next!
+            <a href="#">#Suggestions</a>
+            <a href="#">#HTML/CSS/BOOTSTRAP</a>
+          </p>
+          <img src="./images/feed-image-5.png" class="post-img" />
+          <div class="post-row">
+            <div class="activity-icon">
+              <div><img src="./images/like-blue.png" />220</div>
+              <div><img src="./images/comments.png" />118</div>
+              <div><img src="./images/share.png" />26</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="./images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more">Load More</button>
+      </div>
+
+      <!-- right sidebar------ -->
+
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="events">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h6>Social Media</h6>
+            <p><i class="fa-solid fa-location-dot"></i> Wilson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="events">
+          <div class="left-event">
+            <h3>22</h3>
+            <span>June</span>
+          </div>
+          <div class="right-event">
+            <h6>Mobile Marketing</h6>
+            <p><i class="fa-solid fa-location-dot"></i> Wilson Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close </a>
+        </div>
+        <a href="#"
+          ><img src="./images/advertisement.png" class="sidebarr"
+        /></a>
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat </a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-1.png" />
+          </div>
+          <p>Alson Mina</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-2.png" />
+          </div>
+          <p>Jackson Aston</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="./images/member-3.png" />
+          </div>
+          <p>Somana Rose</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer--- -->
+
+    <footer>
+      <div class="footer">
+        <p>Copyright 2022 - Debanjan Bose</p>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
